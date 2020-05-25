@@ -25,17 +25,53 @@
 
     <main>
       <!--Скрытый заголовок-->
-      <h1>Гостиницы городка Седона</h1>
+      <h1 class="visually-hidden">Гостиницы городка Седона</h1>
 
       <section>
         <!--Скрытый заголовок-->
-        <h2>Фильтр гостиниц</h2>
-        <!--Тут будет хитрый фильтр, который пока что не надо делать-->
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET" style="background: url(img/hotels/background.jpg) no-repeat;">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartment" id="filter-apartment"checked>
+                <label for="filter-apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
         <!--Скрытый заголовок-->
-        <h2>Список отобранных гостиниц</h2>
+        <h2 class="visually-hidden">Список отобранных гостиниц</h2>
         <ul>
           <li>
               <h3>Amara Resort & Spa</h3>

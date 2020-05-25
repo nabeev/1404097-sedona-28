@@ -26,11 +26,11 @@
     <main>
 
       <!--Заголовок скрытый-->
-      <h1>О городке Седона</h1>
+      <h1 class="visually-hidden">О городке Седона</h1>
 
       <section>
         <!--Заголовок скрытый-->
-        <h2>Добро пожаловать в Седону</h2>
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
         <div style="background: url(img/index/background_photo.jpg) no-repeat;"> 
           <!--Большой баннер-->
           <img src="img/index/welcome_to_sedona.svg" width="457" height="351" alt="Добро пожаловать в Седону">
@@ -43,7 +43,7 @@
 
       <section>
         <!--Заголовок скрытый-->
-        <h2>5 причин крутизны</h2>
+        <h2 class="visually-hidden">5 причин крутизны</h2>
         <p>
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
@@ -107,7 +107,7 @@
       
       <section>
         <!--Заголовок скрытый-->
-        <h2>Предложение зарегистрироваться</h2>
+        <h2 class="visually-hidden">Предложение зарегистрироваться</h2>
         <p>Заинтересовались?</p>
         <p>
           Укажите предполагаемые даты поездки,<br>
@@ -163,8 +163,25 @@
 
     <section>
       <h2>Поиск гостиницы</h2>
-      <!--Форма поиска: даты, постояльцы-->
-      <button type="button">Найти</button>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <p>
+          <label for="arrival-date">Дата заезда</label>
+          <input id="arrival-date" type="text" name="date_1" value="24 апреля 2017">
+        </p>
+        <p>
+          <label for="leaving-date">Дата выезда</label>
+          <input id="leaving-date" type="text" name="date_2" value="4 июля 2017">
+        </p>
+        <p>
+          <label for="adult-qty">Взрослые</label>
+          <input id="adult-qty" type="text" name="adult" value="2">
+        </p>
+        <p>
+          <label for="chidren-qty">Дети</label>
+          <input id="chidren-qty" type="text" name="children" value="0">
+        </p>
+        <button type="submit">Найти</button>
+      </form>
     </section>
     
     <!--
