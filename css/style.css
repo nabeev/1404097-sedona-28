@@ -109,13 +109,13 @@ img {
     text-align: center;
     vertical-align: middle;
     background-color: var(--basic-black);
-    background-image: url("/img/index/background_photo.jpg");
+    background-image: url("../img/index/background_photo.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .welcome-banner::after {
-    content: url(/img/index/background_shape.png);
+    content: url("../img/index/background_shape.png");
 }
 
 /* Advantages */
@@ -189,7 +189,7 @@ img {
 .calendar input {
     width: 346px;
     background-color: var(--input-background);
-    background-image: url("/img/index/calendar_icon.svg");
+    background-image: url("../img/index/calendar_icon.svg");
     background-position: 320px, 0;
     background-repeat: no-repeat;
 }
@@ -210,11 +210,11 @@ img {
 }
 
 .calendar input:hover {
-    background-image: url("/img/index/calendar_icon_hover.svg");
+    background-image: url("../img/index/calendar_icon_hover.svg");
 }
 
 .calendar input:focus {
-    background-image: url("/img/index/calendar_icon_active.svg");
+    background-image: url("../img/index/calendar_icon_active.svg");
     width: 342px;
 }
 
@@ -314,17 +314,17 @@ img {
     width: 115px;
     height: 41px;
     
-    background-image: url("/img/index/logo_htmlacademy_2.svg");
+    background-image: url("../img/index/logo_htmlacademy_2.svg");
     background-repeat: no-repeat;
 }
 
 .footer-copyright a:hover,
 .footer-copyright a:focus {
-    background-image: url("/img/index/logo_htmlacademy_hover.svg");
+    background-image: url("../img/index/logo_htmlacademy_hover.svg");
 }
 
 .footer-copyright a:active {
-    background-image: url("/img/index/logo_htmlacademy_active.svg");
+    background-image: url("../img/index/logo_htmlacademy_active.svg");
 }
 
 
@@ -335,7 +335,7 @@ img {
 .hotel-filter {
     width: 1200px;
     /* height: 217px; */
-    background-image: url("/img/hotels/background.jpg");
+    background-image: url("../img/hotels/background.jpg");
     background-repeat: no-repeat;
 }
 
@@ -425,43 +425,43 @@ img {
 }
 
 .sort-order .up {
-    background-image: url("/img/hotels/up_rect_icon.svg");
+    background-image: url("../img/hotels/up_rect_icon.svg");
 }
 
 .sort-order .up-active {
-    background-image: url("/img/hotels/up_rect_active_icon.svg");
+    background-image: url("../img/hotels/up_rect_active_icon.svg");
 }
 
 .sort-order .up:hover,
 .sort-order .up:focus,
 .sort-order .up-active:hover,
 .sort-order .up-active:focus {
-    background-image: url("/img/hotels/up_rect_hover_icon.svg");
+    background-image: url("../img/hotels/up_rect_hover_icon.svg");
 }
 
 .sort-order .up:active,
 .sort-order .up-active:active {
-    background-image: url("/img/hotels/up_rect_active_icon.svg");
+    background-image: url("../img/hotels/up_rect_active_icon.svg");
 }
 
 .sort-order .down {
-    background-image: url("/img/hotels/down_rect_icon.svg");
+    background-image: url("../img/hotels/down_rect_icon.svg");
 }
 
 .sort-order .down-active {
-    background-image: url("/img/hotels/down_rect_active_icon.svg");
+    background-image: url("../img/hotels/down_rect_active_icon.svg");
 }
 
 .sort-order .down:hover,
 .sort-order .down:focus,
 .sort-order .down-active:hover,
 .sort-order .down-active:focus {
-    background-image: url("/img/hotels/down_rect_hover_icon.svg");
+    background-image: url("../img/hotels/down_rect_hover_icon.svg");
 }
 
 .sort-order .down:active,
 .sort-order .down-active:active {
-    background-image: url("/img/hotels/down_rect_active_icon.svg");
+    background-image: url("../img/hotels/down_rect_active_icon.svg");
 }
 
 /* Searched hotels */
