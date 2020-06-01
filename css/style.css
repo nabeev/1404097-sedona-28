@@ -68,6 +68,8 @@ img {
 
 .navigation-list {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navigation-list a {
