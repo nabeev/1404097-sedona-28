@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -7,23 +7,25 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-
       <nav class="main-navigation">
       <!--Небольшой логотип городка по центру сверху-->
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index/sedona_logo.svg" width="138" height="70" alt="Логотип городка Cедона">
-        </a>
+        <div class="main-header-logo-wrap">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/index/sedona_logo.svg" width="138" height="70" alt="Логотип городка Cедона">
+          </a>
+        </div>
       <!--Главная навигация-->
-        <ul class="navigation-list">
-          <li><a href="#">информация</a></li>
-          <li><a href="#">фото и видео</a></li>
-          <li><a href="#">карта штата</a></li>
-          <li><a href="hotels.html">гостиницы</a></li>
-        </ul>
+        <div class="container">
+          <ul class="navigation-list">
+            <li><a href="#">информация</a></li>
+            <li><a href="#">фото и видео</a></li>
+            <li><a href="#">карта штата</a></li>
+            <li><a href="hotels.html">гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
-
     </header>
 
     <main class="container">
@@ -36,7 +38,10 @@
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
         <div class="welcome-banner"> 
           <!--Большой баннер-->
+          <div class="welcome-banner-image">
           <img src="img/index/welcome_to_sedona.svg" width="457" height="351" alt="Добро пожаловать в Седону">
+          <!-- <img src="img/index/background_shape.png"> -->
+          </div>
         </div>
         <p>
           Седона — небольшой городок в Аризоне,<br>
@@ -53,15 +58,22 @@
         <!--Сомневался сделать ли нумерованный список, но по-моему порядок тут совсем не важен-->
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3>Настоящий городок</h3>
-            <p> - №1 - </p>
-            <p>
-              Седона - не аттракцион для туристов, там<br>
-              течёт своя жизнь
-            </p>
-            <img src="img/index/true_town.jpg" width="800" height="256" alt="Настоящий маленький Американский городок">
+            <div class="advantages-item-desc-wrap">
+              <div class="advantages-item-desc-wrap2">
+                <h3>
+                  Настоящий<br>
+                  городок
+                </h3>
+                <p> - №1 - </p>
+                <p>
+                  Седона - не аттракцион для туристов, там<br>
+                  течёт своя жизнь
+                </p>
+              </div>
+              <img src="img/index/true_town.jpg" width="800" height="256" alt="Настоящий маленький Американский городок">
+            </div>
             <ul class="town-desc-list">
-              <li>
+              <li class="town-desc-item">
                 <h4>Жильё</h4>
                 <img src="img/index/house_icon.svg" wigth="75" height="72" alt="Красивый маленький домик">
                 <p>
@@ -69,7 +81,7 @@
                   мотеле, всё как в кино
                 </p>
               </li>
-              <li>
+              <li class="town-desc-item">
                 <h4>Еда</h4>
                 <img src="img/index/burger_icon.svg" width="75" height="70" alt="Огромный бургер">
                 <p>
@@ -77,7 +89,7 @@
                   вы не разочаруетесь!
                 </p>
               </li>
-              <li>
+              <li class="town-desc-item">
                 <h4>Сувениры</h4>
                 <img src="img/index/gift_icon.svg" width="64" height="77" alt="Сюрприз-подарок перевязан лентой">
                 <p>
@@ -88,28 +100,65 @@
             </ul>
           </li>
           <li class="advantages-item">
-            <h3>Там есть мост дьявола</h3>
-            <p> - №2 - </p>
-            <p>
-              Да, по нему можно пройти! Если конечно<br>
-              вы осмелитесь
-            </p>
-            <img src="img/index/devil_bridge.jpg" width="800" height="256" alt="Скальный пейзаж с огромной пропастью">
+            <div class="advantages-item-desc-wrap">
+              <div class="advantages-item-desc-wrap2">
+                <h3>
+                  Там есть<br>
+                  мост дьявола
+                </h3>
+                <p> - №2 - </p>
+                <p>
+                  Да, по нему можно пройти! Если конечно<br>
+                  вы осмелитесь
+                </p>
+              </div>
+              <img class="devil-bridge-img"src="img/index/devil_bridge.jpg" width="800" height="256" alt="Скальный пейзаж с огромной пропастью">
+            </div>
           </li>
           <li class="advantages-item">
-            <h3>Небольшая площадь</h3>
-            <p> - №3 - </p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <div class="advantages-item-desc-wrap">
+              <div class="advantages-item-desc-wrap2">
+                <h3>
+                  Небольшая<br>
+                  площадь
+                </h3>
+                <p> - №3 - </p>
+                <p>
+                  Все достопримечательности<br>
+                  находятся очень близко
+                </p>
+              </div>
+            </div>
           </li>
           <li class="advantages-item">
-            <h3>Красивая дорога</h3>
-            <p> - №4 - </p>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+            <div class="advantages-item-desc-wrap">
+              <div class="advantages-item-desc-wrap2">
+                <h3>
+                  Красивая<br>
+                  дорога
+                </h3>
+                <p> - №4 - </p>
+                <p>
+                  ехать в седону из лас-вегаса совсем<br>
+                  не скучно!
+                </p>
+              </div>
+            </div>
           </li>
           <li class="advantages-item">
-            <h3>Мало туристов</h3>
-            <p> - №5 - </p>
-            <p>большинство едет в гранд каньон и толпится там</p>
+            <div class="advantages-item-desc-wrap">
+              <div class="advantages-item-desc-wrap2">
+                <h3>
+                  Мало<br>
+                  туристов
+                </h3>
+                <p> - №5 - </p>
+                <p>
+                  большинство едет в гранд каньон<br>
+                  и толпится там
+                </p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -128,51 +177,49 @@
     </main>
 
     <footer class="footer">
+      <div class="container">
 
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p>#visitsedona<br>
-          тел: +7(495)666-01-66
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p>#visitsedona<br>
+            тел: +7(495)666-01-66
+          </p>
+        </section>
+
+        <section class="footer-socials">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul>
+            <li>
+              <a class="social-button" href="#">
+                <div class="social-button-wrap social-button-twitter">
+                  <span class="visually-hidden">Твиттер</span>                  
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <div class="social-button-wrap social-button-fb">
+                  <span class="visually-hidden">Фейсбук</span>                  
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">                
+                <div class="social-button-wrap social-button-youtube">
+                  <span class="visually-hidden">Youtube</span>                  
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <p class="footer-copyright">
+          website by 
+          <a href="https://htmlacademy.ru">
+            <span class="visually-hidden">html academy</span>
+          </a>
         </p>
-      </section>
-
-      <section class="footer-socials">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Твиттер</span>
-              <div class="wrap">
-                <img src="img/index/twitter_icon.svg" width="17" height="17" alt="Иконка Твиттера">
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-              <div class="wrap">
-                <img src="img/index/fb_icon.svg" width="17" height="17" alt="Иконка Фейсбук">
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Youtube</span>
-              <div class="wrap">
-                <img src="img/index/youtube_icon.svg" width="17" height="17" alt="Иконка Youtube">
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <p class="footer-copyright">
-        website by:
-        <a href="https://htmlacademy.ru">
-          <span class="visually-hidden">html academy</span>
-        </a>
-      </p>
-
+      </div>  
     </footer>   
 
     <section>
