@@ -31,6 +31,7 @@
 }
 
 body {
+    position: relative;
     min-width: 1220px;
     margin: 0;
     padding: 0;
@@ -92,9 +93,7 @@ input[type="number"] {
 
 .main-header {
     text-align: center;
-    width: 100%;
-  
-    
+    width: 100%;    
 }
 
 .main-navigation {
@@ -115,9 +114,6 @@ input[type="number"] {
     padding: 0;
     display: flex;
     justify-content: space-between;
-
-    /* outline: 5px solid rgba(0, 255, 0, 0.3);
-    outline-offset: -5px; */
 }
 
 .navigation-list li:first-child {
@@ -300,21 +296,30 @@ input[type="number"] {
     line-height: 24px;
     margin-bottom: 40px;
 }
+
+.map-box { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
 /*Appointment form*/
 
 .appointment-form {
+    position: absolute;
+    
     width: 568px;
     height: 395px;
-    outline: 5px solid rgb(0, 247, 255);
-    outline-offset: -5px;
+    
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
 
-    
-
+    background-color: var(--basic-white);
 }
 
 
@@ -455,9 +460,15 @@ input[type="number"] {
 /* Footer */
 
 .footer {
-    min-height: 120px;
+   min-height: 120px;
 }
 
+.index-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    justify-self: center;
+}
 
 .footer .container {
     display: grid;
@@ -595,7 +606,7 @@ input[type="number"] {
 
 .filter li {
     margin-bottom: 25px;
-    padding-left: 20px;
+    padding: 0;
 }
 
 
@@ -657,6 +668,40 @@ input[type="number"] {
     background-color: var(--basic-white);
 }
 
+/*Checkbox*/
+
+.filter .check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.filter .check-box {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    margin-left: -40px;
+    background-image: url("../img/hotels/checkbox_off_icon.svg");
+    background-repeat: no-repeat;
+}
+
+.filter .check-label {
+    padding-left: 40px;
+}
+
+.check-input:checked + .check-box {
+    background-image: url("../img/hotels/checkbox_on_icon.svg");
+}
+
+.check-input:disabled + .check-box {
+    background-image: url("../img/hotels/checkbox_off_dis_icon.svg");
+}
+
+.check-input:checked:disabled + .check-box {
+    background-image: url("../img/hotels/checkbox_on_dis_icon.svg");
+}
+
 /*Range*/
 
 .price-controls input {
@@ -670,13 +715,10 @@ input[type="number"] {
     background: transparent; 
     font-family: inherit;
     font-size: inherit;
-    /* outline: 5px solid rgba(5, 238, 55, 0.3); */
-    /* outline-offset: -5px; */
+    
 }
 
 .price-controls label {
-    /* outline: 5px solid rgba(238, 5, 121, 0.3);
-    outline-offset: -5px; */
     text-align: center;
     width: 100%;
 }
@@ -688,8 +730,6 @@ input[type="number"] {
 .price-controls .max-price {
     padding-left: 30px; /*подгоняется pixel_perfect*/
 }
-
-
 
 .price-controls .stick {
     width: 2px;
@@ -738,6 +778,14 @@ input[type="number"] {
     box-shadow: 0 2px 1px 0 rgba(171,171,171,0.3);
 
     cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+    top: 10px;
+    width: 23px;
+    height: 23px;
+    transform: translateX(-1px);
+    transition: all 0.2s;
 }
 
 .range-controls .toggle-min {
@@ -1014,31 +1062,18 @@ input[type="number"] {
 }
 
 
-/* .button_test {
-   
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.test-checkbox {
+    margin-top: 50px;
+    display: block;
+    background-color:  rgb(125, 253, 5);
 
-    justify-items: start;
-    
-
-
-    background-color: blueviolet;
-    border: 1px solid black;
+    min-height: 100px;
+    width: 200px;
 }
 
-.super_button {
-    width: 300px;
-    height: 60px;
-    margin-left: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    text-align: center;
-    background-color: chocolate;
-    border: 1px solid black;  
+.test-checkbox img {
+    display: block;
+    margin: auto;
 }
 
-.button_test a {
-    padding-top: 18px;
-} */
+
