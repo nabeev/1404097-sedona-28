@@ -4,36 +4,32 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-      <!--Небольшой логотип городка по центру сверху-->
+      <nav class="main-navigation">      
         <div class="main-header-logo-wrap">
           <a class="main-header-logo" href="index.html">
             <img src="img/index/sedona_logo.svg" width="138" height="70" alt="Логотип городка Cедона">
           </a>
-        </div>
-      <!--Главная навигация-->
+        </div>      
         <div class="container">
           <ul class="navigation-list">
             <li><a href="#">информация</a></li>
             <li><a href="#">фото и видео</a></li>
             <li><a href="#">карта штата</a></li>
-            <li><a href="hotels.html">гостиницы</a></li>
+            <li><a class="active-page" href="hotels.html">гостиницы</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="container">
-      <!--Скрытый заголовок-->
+    <main class="container">      
       <h1 class="visually-hidden">Гостиницы городка Седона</h1>
 
-      <section class="hotel-filter">
-        <!--Скрытый заголовок-->
+      <section class="hotel-filter">        
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="infrastructure">
@@ -81,7 +77,7 @@
               </li>
               <li class="hotel-type-item">
                 <label class="check-label">
-                  <input class="check-input" type="checkbox" name="apartment" id="filter-apartment"checked>
+                  <input class="check-input" type="checkbox" name="apartment" id="filter-apartment" checked>
                   <span class="check-box"></span>
                   Апартаменты
                 </label>
@@ -112,12 +108,11 @@
               </div> 
             </div>
           </fieldset>
-          <button class="hotel-filter-button"type="submit">Показать</button>
+          <button class="hotel-filter-button" type="submit">Показать</button>
         </form>
       </section>
 
-      <section>
-        <!--Скрытый заголовок-->
+      <section>        
         <h2 class="visually-hidden">Список отобранных гостиниц</h2>
         <div class="sort-panel">
           <h3>Найдено: 3</h3>
@@ -237,7 +232,8 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p>#visitsedona<br>
-            тел: +7(495)666-01-66
+            тел:
+            <a href="tel:+74956660166">+7(495)666-01-66</a>
           </p>
         </section>
 
