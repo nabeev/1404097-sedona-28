@@ -618,6 +618,7 @@ input[type="number"]:focus {
 
 .appointment-button {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 21px;
 	line-height: 26px;
 	width: 568px;
