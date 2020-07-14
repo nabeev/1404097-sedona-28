@@ -663,6 +663,7 @@ input[type="number"]:focus {
 	width: 100%;
 	min-height: 120px;
 	background-color: var(--basic-white);
+	padding-top: 1px;
 }
 
 .index-footer {
@@ -671,6 +672,7 @@ input[type="number"]:focus {
 	background-color: rgba(255, 255, 255, 0.9);
 	-ms-grid-column-align: center;
 	justify-self: center;
+	padding-top: 0;
 }
 
 .footer .container {
@@ -690,17 +692,17 @@ input[type="number"]:focus {
 .footer-contacts {
 	font-size: 21px;
 	font-weight: bold;
-	line-height: 36px;
 	text-align: center;
 	margin: 0;
 	margin-left: 73px;
-}
-
-.footer-contacts p {
-	padding-bottom: 11px;
+	margin-bottom: 12px;
+	margin-top: 3px;
+	padding-top: 0;
 }
 
 .footer-contacts a {
+	display: inline-block;
+	margin-top: 14px;
 	color: var(--basic-black);
 }
 
@@ -714,11 +716,13 @@ input[type="number"]:focus {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	list-style: none;
 	padding: 0;
+	margin-bottom: 10px;
 }
 
 .social-button-twitter {
@@ -778,6 +782,7 @@ input[type="number"]:focus {
 	align-items: center;
 	line-height: 26px;
 	margin-right: 75px;
+	margin-bottom: 12px;
 }
 
 .footer-copyright a {
@@ -855,6 +860,7 @@ input[type="number"]:focus {
 	background-color: #7f6665;
 	background-image: url("../img/hotels/background.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .filter fieldset {
@@ -1014,21 +1020,19 @@ input[type="number"]:focus {
 	border: 8px solid var(--basic-white);
 	border-radius: 50%;
 	-webkit-box-shadow: 0 2px 1px 0 #ABABAB;
-	box-shadow: 0 2px 1px 0 #ABABAB;
+	box-shadow: 0 2px 0 0 #ABABAB;
 	cursor: pointer;
 }
 
 .range-controls .toggle:hover,
 .range-controls .toggle:focus {
+	width: 24px;
+	height: 24px;
 	top: 10px;
-	width: 23px;
-	height: 23px;
-	-webkit-transform: translateX(-1px);
-	-ms-transform: translateX(-1px);
-	transform: translateX(-1px);
-	-webkit-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
+	border: 10px solid var(--basic-white);
+	-webkit-transform: translateX(-2px);
+	-ms-transform: translateX(-2px);
+	transform: translateX(-2px);
 }
 
 .range-controls .toggle-min {
@@ -1057,7 +1061,7 @@ input[type="number"]:focus {
 	font-size: 21px;
 	line-height: 26px;
 	margin-left: 73px;
-	margin-top: 15px;
+	margin-top: 17px;
 }
 
 .sort-panel p {
@@ -1205,7 +1209,12 @@ input[type="number"]:focus {
 	-ms-flex-pack: center;
 	justify-content: center;
 	border-top: 1px solid var(--input-focus-border);
-	min-height: 150px;
+	min-height: 151px;
+}
+
+.hotels-item:last-child {
+	min-height: 152px;
+	border-bottom: 1px solid var(--input-focus-border);
 }
 
 .hotel-name-main-wrap {
@@ -1231,7 +1240,8 @@ input[type="number"]:focus {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 0;
-	margin-left: 30px;
+	padding-bottom: 5px;
+	margin-left: 29px;	
 }
 
 .hotels-item-image {
@@ -1242,6 +1252,7 @@ input[type="number"]:focus {
 	-ms-flex-order: -1;
 	order: -1;
 	line-height: 0;
+	margin-bottom: 6px;
 }
 
 .hotel-name {
@@ -1267,6 +1278,7 @@ input[type="number"]:focus {
 	grid-column-gap: 6px;
 	grid-row-gap: 15px;
 	margin: 0;
+	padding-bottom: 1px;
 }
 
 .hotels-list h3 {
@@ -1291,11 +1303,17 @@ input[type="number"]:focus {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin: 0;
+	margin-bottom: 7px;
 	margin-left: auto;
 }
 
 .star-line {
 	text-align: end;
+	margin-right: -1px;
+}
+
+.star-line img {
+	margin-left: 1px;
 }
 
 .hotel-rating {
